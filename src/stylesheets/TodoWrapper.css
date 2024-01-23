@@ -1,0 +1,82 @@
+.TodoWrapper {
+    background: var(--secondary-color);
+    border-radius: 5px;
+    margin: 5rem 0 2rem 0;
+    padding: 3rem;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--font-color);
+}
+
+
+.MainForm.Form {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.Form {
+    margin-bottom: 1rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+}
+
+.Form input {
+    outline: none;
+    background: none;
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1rem;
+    color: var(--font-color);
+    flex-grow: 1;
+}
+
+.Form input::placeholder {
+    color: var(--font-placeholder-color);
+}
+
+.Form button {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.55rem;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1rem;
+}
+
+
+
+.Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem; 
+    font-size: 1rem;
+}
+
+.Todo p, .Todo svg {
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.Todo svg {
+    margin: 0 0 0 1rem;
+}
+
+.Todo p.completed {
+    text-decoration: line-through;
+    color: var(--font-faded-color);
+}
